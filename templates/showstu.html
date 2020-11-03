@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>showstu</title>
+</head>
+<body>
+    <TABLE border="1" cellpadding="20px">
+        <tr >
+            <td>id</td>
+            <td>姓名</td>
+            <td>密码</td>
+        </tr>
+        {% for stu in stulist %}
+            <tr>
+                <td>{{ stu.id }}</td>
+                <td>{{ stu.sname }}</td>
+                <td>{{ stu.spwd }}</td>
+            </tr>
+        {% endfor %}
+    </TABLE>
+</body>
+</html>
